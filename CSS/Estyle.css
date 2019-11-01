@@ -1,0 +1,125 @@
+:root {
+    /* Estilos */
+    --Body-backgroun-colo: #fafafa;
+    --Principal-background-color: #F44336;
+    --Boton-background-color: ;
+    --Boton-font-color: #fff;
+    --Lista-Tareas-font-color: #212121;
+    --Titulo-background: rgba(0, 0, 0, 0.89);
+    --Titulo-font-size: 30px;
+    --Titulo-font-family: sans-serif, serif;
+    --Boton-background-hover: rgb(14, 156, 21);
+    --Lista-font-size: 20px;
+    --Lista-font-color: #212121;
+    --Footer-background-color: rgba(0, 0, 0, 0.89);
+    /* Estructura */
+    --height-Principal: 150px;
+    --Form-width: 70%;
+    --Input-width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--Titulo-font-family);
+    font-size: var(--Titulo-font-size);
+    color: white;
+    Background-color: var(--Titulo-background);
+    padding: 10px 0;
+}
+
+.principal {
+    background-color: var(--Principal-background-color);
+    height: var(--height-Principal);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.formulario {
+    width: var(--Form-width);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formulario input {
+    display: block;
+    width: var(--Input-width);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.boton {
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: var(--Boton-font-color);
+    border: 2px solid white;
+    transition: 1s;
+}
+
+.boton:hover {
+    background-color: var(--Boton-background-hover);
+    cursor: pointer;
+}
+
+.tareas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.wrap {
+    width: 60%;
+}
+
+.lista {
+    list-style: none;
+    Padding: 10px;
+}
+
+.lista li {
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--Lista-font-color);
+}
+
+li a {
+    font-size: var(--Lista-font-size);
+    text-decoration: none;
+    color: var(--Lista-font-color);
+}
+
+li a:Hover {
+    text-decoration: line-through;
+}
+
+footer {
+    background-color: var(--Footer-background-color);
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: sans-serif, serif;
+    color: white;
+    font-size: 20px;
+}
